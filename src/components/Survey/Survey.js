@@ -207,8 +207,8 @@ class Survey extends React.Component {
     })
 
       alert("You will now be redirected to the game page. Please, confirm leaving the page. Thank you!")
-//      window.location = 'https://app.prolific.co/submissions/complete?cc=XXXXXX' // TO BE CHANGED + this.props.location.state.participant_info.study_id // CHECK if validation code == stidu id
-      window.location = 'http://localhost:5000/exp?prolific_id='+this.state.participant_info.prolific_id + '&participant_id=' + this.state.participant_info.participant_id +'&handle=' + this.state.participant_info.handle 
+//      window.location = 'https://app.prolific.co/submissions/complete?cc=XXXXXX' // 
+      window.location = 'https://api-brainexp.osc-fr1.scalingo.io/exp?prolific_id='+this.state.participant_info.prolific_id + '&participant_id=' + this.state.participant_info.participant_id +'&handle=' + this.state.participant_info.handle 
 
   }
   

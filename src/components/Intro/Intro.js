@@ -128,7 +128,7 @@ redirectToGame () {
 
   alert("You will now be redirected to the game page. Please, confirm leaving the page. Thank you!")
 //   window.location = 'http://localhost:5000/exp?prolific_id='+this.state.participant_info.prolific_id + '&participant_id=' + this.state.participant_info.participant_id +'&handle=' + this.state.participant_info.handle 
-  window.location = 'http://localhost:5000/exp?prolific_id='+'kiki' + '&participant_id=' + '1000' +'&handle=' + 'kaka8' 
+  window.location = 'https://api-brainexp.osc-fr1.scalingo.io/exp?prolific_id='+'kiki' + '&participant_id=' + '1000' +'&handle=' + 'kaka8' 
 
 }
 

@@ -17,8 +17,11 @@ Contains the INFORMATION for FROM THE ONLINE ETHICS
 
 const survey_list = [
  'gh',
- 'cc', 
- 'app', 
+ 'cc1',
+ 'cc2',
+ 'cc3', 
+ 'app',
+ 'iq' 
 ]
 
 
@@ -122,7 +125,7 @@ redirectToSurvey () {
      })
    }
 
-/* This is for DEBUG ONLY TO BE REMOVED */
+/* This is for DEBUG ONLY TO BE REMOVED  THE MB-MF will be used in a separate session*/
 
 redirectToGame () {
 
@@ -145,10 +148,11 @@ render() {
           <p><span className="bold">Who can take part in this study?</span></p>
           <p>Adults (aged 18 years or over).</p>
           <p><span className="bold">What will happen to me if I take part?</span></p> 
-          <p>You will play one or more online computer games, which will last around approximately 1 hour in total.</p> 
-          <p>You will receive <span className="bold">£8.25</span> for helping us.</p>
-          <p>You will also be asked some questions about the games</p>
+          <p>There will also be some questions about reasoning.</p>
           <p>For this experiment we are interested in multiple different processes in learning and decision-making.</p>
+          <p>You will play several online computer games, which will last around approximately 1 hour in total.</p> 
+          <p>You will also be asked some questions about the games</p>
+          <p>After you complete this session, we will invite you to participate in the second session in a few weeks. You will be compensated after completion of each session with <span className="bold">£8.25/h</span> and if you participate in the whole experiment you will receive a total of <span className="bold">£16.50</span>.</p>
           <br></br>
           <p>Remember, you are free to withdraw at any time without giving a reason.</p> 
           
@@ -194,7 +198,7 @@ render() {
         </div>
         <div className="buttonContainer">
           <Button type="button" onClick={()=>this.redirectToTarget()}>NEXT</Button>
-          <Button type="button" onClick={()=>this.redirectToGame()}>GAME</Button>
+          <Button type="button" onClick={()=>this.redirectToSurvey()}>GAME</Button>
 
         </div>
         </div>  

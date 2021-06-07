@@ -9,27 +9,39 @@ import './Survey.css';
 
 // import other questionnaires the same way
 import * as gh from '../../questionnaires/gh_feedback';
-import * as cc from '../../questionnaires/cc_feedback';
+import * as cc1 from '../../questionnaires/cc1_feedback';
+import * as cc2 from '../../questionnaires/cc2_feedback';
+import * as cc3 from '../../questionnaires/cc3_feedback';
 import * as app from '../../questionnaires/app_feedback';
+import * as iq from '../../questionnaires/iq';
 
 
 
 const survey_names = [
 'Goblin Heist',
-'Cryptic Creatures', 
-'App feedback', // app  
+'Cryptic Creatures Level 1',
+'Cryptic Creatures Level 2',
+'Cryptic Creatures Level 3',
+'App feedback', // app 
+'IQ' 
 ]
 
 const iconnames = [
 'goblinheist_icon.png',
-'crypticcreatures_icon.png', 
+'cc_level1.png', 
+'cc_level2.png', 
+'cc_level3.png', 
 'appfeedback_icon.png', 
+'iq_icon.png', 
 ]
 
 var quizData = {
   gh: gh, 
-  cc: cc,
+  cc1: cc1,
+  cc2: cc2,
+  cc3: cc3,
   app: app,
+  iq:  iq
 }
 
 
@@ -206,9 +218,9 @@ class Survey extends React.Component {
        body: JSON.stringify(body_cashed)
     })
 
-      alert("You will now be redirected to the game page. Please, confirm leaving the page. Thank you!")
-//      window.location = 'https://app.prolific.co/submissions/complete?cc=XXXXXX' // 
-      window.location = 'https://api-brainexp.osc-fr1.scalingo.io/exp?prolific_id='+this.state.participant_info.prolific_id + '&participant_id=' + this.state.participant_info.participant_id +'&handle=' + this.state.participant_info.handle 
+      alert("You will now be redirected to the submission page. Please, confirm leaving the page. Thank you!")
+      window.location = 'https://app.prolific.co/submissions/complete?cc=XXXXXX' // 
+      // window.location = 'https://api-brainexp.osc-fr1.scalingo.io/exp?prolific_id='+this.state.participant_info.prolific_id + '&participant_id=' + this.state.participant_info.participant_id +'&handle=' + this.state.participant_info.handle 
 
   }
   
@@ -220,7 +232,7 @@ render()
     if ((this.state.block_info.surveytag === this.props.location.state.participant_info.survey_list[0]) && (this.state.newblock_frame))
     { 
       text = <div className='SurveyIntroText'> <p>Dear Participant,</p>
-      <p>Please, now play <span className="bold">Goblin Heist</span> game in the app.</p>
+      <p>Please, now play the <span className="bold">Goblin Heist</span> game in the app.</p>
       <p>You should complete the game <span className="bold">just once to win 1 star</span>.</p>
       <p>But first, go through the tutorial carefully.</p>
       <p>Once done, click CONTINUE.</p></div>
@@ -256,7 +268,6 @@ render()
             <br></br>
             <p> Thank you for your help!</p>
             <br></br>
-            <p>Please proceed to the second part where you will be asked to play one more game.</p>
             <p>Please, confirm leaving the page if prompted by the browser. Thank you!</p></div>
       
       return (
@@ -275,7 +286,31 @@ render()
 
     else if (this.state.block_info.survey_names[this.props.location.state.participant_info.block_number_survey+1]=='App feedback')
     {
-      text  = 'Thank you! Please, now feel free to explore the app and then continue to the final feedback assignment.'
+      text  = 'Thank you! Please, now feel free to explore the app and then continue when you are ready.'
+      icon_ = this.state.block_info.iconnames[this.props.location.state.participant_info.block_number_survey+1]  
+        return (
+          <div>
+            <center> 
+            <div className="SurveyButtonContainer">
+            <div className='SurveyIntroText'>
+              {text}
+            </div> 
+            <div className="iconframe">    
+              <img className="iconsymbol" src={require(`../../images/${icon_}`)} alt='iconsymbol'/> 
+            </div>
+            <center>
+            <Button className="btn btn-save btn-primary pad-20 width=20vh height-8vh" onClick={()=>this.redirectToQuiz()}>
+              <span className="bold">CONTINUE</span>
+            </Button>
+            </center>
+          </div>
+        </center> 
+        </div>);
+    }        
+
+    else if (this.state.block_info.survey_names[this.props.location.state.participant_info.block_number_survey+1]=='IQ')
+    {
+      text  = 'Thank you! We will now ask you to asnwer some questions about reasoning. You don"t need to use the app for this task.'
       icon_ = this.state.block_info.iconnames[this.props.location.state.participant_info.block_number_survey+1]  
         return (
           <div>

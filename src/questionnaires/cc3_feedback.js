@@ -7,7 +7,7 @@ var quizQuestions = [
 
 {
 
-	question: "We will ask you some questions about the Level 1 of the Cryptic Creatures game now.", 
+	question: "We will ask you some questions about the Level 3 of the Cryptic Creatures game now.", 
   answers: [
           {
               type: "Continue",
@@ -16,60 +16,13 @@ var quizQuestions = [
           ],
       qtype: "button", 
       questionId: 0,
-      surveytag: 'cc', 
+      surveytag: 'cc3', 
       title: 'Cryptic Creatures', 
       constraint: [
         {min: ""},
         {max: ""}
       ] 
 },
-
-{
-      question: "Was the game tutorial clear?",
-      answers: [
-          {
-              type: "cc-1",
-              content: "Yes"
-          },
-          {
-              type: "cc-2",
-              content: "Somewhat confusing"
-          },
-
-          {
-              type: "cc-3",
-              content: "Very confusing"
-          },
-      ],
-      questionId: 1,
-      surveytag: 'cc1',
-      condition: true,
-      condition_value: ['cc-2','cc-3'],
-      title: '',
-      qtype:"quiz",
-      constraint: [
-        {min: ""},
-        {max: ""}
-      ]
-  },
-
-  {
-      question: "Please, specify what was unclear in the tutorial",
-      answers: [
-          
-      ],
-      questionId: 2,
-      surveytag: 'cc1',
-
-      condition: '',
-      condition_value: '',
-      title: '',
-      qtype:"free-report",
-      constraint: [
-        {min: ""},
-        {max: "1000000"}
-      ]
-  },
 
   {
       question: "Did you experience any technical difficulties during the game?",
@@ -103,8 +56,8 @@ var quizQuestions = [
               content: "Other"
           },
       ],
-      questionId: 3,
-      surveytag: 'cc1',
+      questionId: 1,
+      surveytag: 'cc3',
       condition: true,
       condition_value: ['cc-6'],
       title: '',
@@ -120,8 +73,8 @@ var quizQuestions = [
       answers: [
           
       ],
-      questionId: 4,
-      surveytag: 'cc1',
+      questionId: 2,
+      surveytag: 'cc3',
       condition: '',
       condition_value:'', 
       title: '',
@@ -155,8 +108,8 @@ var quizQuestions = [
               content: "Too long, had to force myself to finish"
           },
       ],
-      questionId: 5,
-      surveytag: 'cc1',
+      questionId: 3,
+      surveytag: 'cc3',
       condition: '',
       title: '',
       qtype:"quiz",
@@ -188,8 +141,8 @@ var quizQuestions = [
               content: "Enjoyed a lot"
           },
       ],
-      questionId: 6,
-      surveytag: 'cc1',
+      questionId: 4,
+      surveytag: 'cc3',
       condition: '',
       title: '',
       qtype:"quiz",
@@ -217,8 +170,8 @@ var quizQuestions = [
           },
 
       ],
-      questionId: 7,
-      surveytag: 'cc1',
+      questionId: 5,
+      surveytag: 'cc3',
       condition: '',
       title: '',
       qtype:"quiz",
@@ -252,8 +205,8 @@ var quizQuestions = [
 
 
       ],
-      questionId: 8,
-      surveytag: 'cc1',
+      questionId: 6,
+      surveytag: 'cc3',
       condition: '',
       title: '',
       qtype:"quiz",
@@ -264,12 +217,48 @@ var quizQuestions = [
   },
 
   {
+      question: "How would you rate the difficulty of this game in comparison to the Level 2 that you have played before?",
+      answers: [
+          {
+              type: "cc-1",
+              content: "Easier than Level 2"
+          },
+          {
+              type: "cc-2",
+              content: "As difficult as Level 2"
+          },
+
+          {
+              type: "cc-3",
+              content: "Somewhat more difficult than Level 2"
+          },
+
+          {
+              type: "cc-4",
+              content: "Much more difficult than Level 2"
+          },
+
+
+      ],
+      questionId: 7,
+      surveytag: 'cc3',
+      condition: '',
+      title: '',
+      qtype:"quiz",
+      constraint: [
+        {min: ""},
+        {max: ""}
+      ]
+  },
+
+
+  {
       question: "What was your strategy in finding which amoeba is the right one?",
       answers: [
           
       ],
-      questionId: 9,
-      surveytag: 'cc1',
+      questionId: 8,
+      surveytag: 'cc3',
       condition: '',
       condition_value:'', 
       title: '',
@@ -284,8 +273,8 @@ var quizQuestions = [
       question: "Any other feedback on the game?",
       answers: [
       ],
-      questionId: 10,
-      surveytag: 'cc1',
+      questionId: 9,
+      surveytag: 'cc3',
       condition: '',
       title: '',
       qtype:"free-report",

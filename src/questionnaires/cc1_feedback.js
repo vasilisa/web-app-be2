@@ -16,7 +16,7 @@ var quizQuestions = [
           ],
       qtype: "button", 
       questionId: 0,
-      surveytag: 'cc', 
+      surveytag: 'cc1', 
       title: 'Cryptic Creatures', 
       constraint: [
         {min: ""},

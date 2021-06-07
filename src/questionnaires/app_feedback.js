@@ -156,10 +156,21 @@ var quizQuestions = [
           },
           {
               type: "app-2",
-              content: "Cryptic creatures"
+              content: "Cryptic creatures Level 1"
           },
-          {
+
+         {
               type: "app-3",
+              content: "Cryptic creatures Level 2"
+          },
+ 
+          {
+              type: "app-4",
+              content: "Cryptic creatures Level 3"
+          },
+
+          {
+              type: "app-5",
               content: "None of them"
           }
       ],

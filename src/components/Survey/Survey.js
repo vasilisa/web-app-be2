@@ -310,7 +310,7 @@ render()
 
     else if (this.state.block_info.survey_names[this.props.location.state.participant_info.block_number_survey+1]=='IQ')
     {
-      text  = 'Thank you! We will now ask you to asnwer some questions about reasoning. You don"t need to use the app for this task.'
+      text  = 'Thank you! We will now ask you to asnwer some questions about reasoning. You don\'t need to use the app for this task.'
       icon_ = this.state.block_info.iconnames[this.props.location.state.participant_info.block_number_survey+1]  
         return (
           <div>

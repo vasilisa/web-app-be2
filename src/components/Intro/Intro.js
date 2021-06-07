@@ -151,7 +151,7 @@ render() {
           <p>There will also be some questions about reasoning.</p>
           <p>For this experiment we are interested in multiple different processes in learning and decision-making.</p>
           <p>You will play several online computer games, which will last around approximately 1 hour in total.</p> 
-          <p>You will also be asked some questions about the games</p>
+          <p>You will also be asked some questions about the games.</p>
           <p>After you complete this session, we will invite you to participate in the second session in a few weeks. You will be compensated after completion of each session with <span className="bold">£8.25/h</span> and if you participate in the whole experiment you will receive a total of <span className="bold">£16.50</span>.</p>
           <br></br>
           <p>Remember, you are free to withdraw at any time without giving a reason.</p> 

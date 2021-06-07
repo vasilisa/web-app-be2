@@ -193,7 +193,7 @@ componentDidMount() {
         }
 
         else if (this.state.currentInstructionText===4){
-        mytext = <div className='textbox'> <p></p> <p>Finally,return to the <span className="bold">Profile</span> page by clicking on the arrow at the top left corner of the screen.</p>
+        mytext = <div className='textbox'> <p></p> <p>Finally, return to the <span className="bold">Profile</span> page by clicking on the arrow at the top left corner of the screen.</p>
                 <p>Click on the icon <span className="bold">Enrol in the study</span> and enter "betest" when prompted for the study handle.</p>
                 <div className="translate"/>
                 <div className="symbolframe">    

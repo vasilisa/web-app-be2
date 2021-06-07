@@ -13,7 +13,7 @@ import * as cc1 from '../../questionnaires/cc1_feedback';
 import * as cc2 from '../../questionnaires/cc2_feedback';
 import * as cc3 from '../../questionnaires/cc3_feedback';
 import * as app from '../../questionnaires/app_feedback';
-import * as iq from '../../questionnaires/iq';
+import * as iq from '../../questionnaires/IQ';
 
 
 

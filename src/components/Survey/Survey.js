@@ -28,9 +28,9 @@ const survey_names = [
 
 const iconnames = [
 'goblinheist_icon.png',
-'CC_level1.png', 
-'CC_level2.png', 
-'CC_level3.png', 
+'cc_level1.png', 
+'cc_level2.png', 
+'cc_level3.png', 
 'appfeedback_icon.png', 
 'iq_icon.png', 
 ]

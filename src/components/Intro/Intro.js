@@ -198,8 +198,6 @@ render() {
         </div>
         <div className="buttonContainer">
           <Button type="button" onClick={()=>this.redirectToTarget()}>NEXT</Button>
-          <Button type="button" onClick={()=>this.redirectToSurvey()}>GAME</Button>
-
         </div>
         </div>  
     );

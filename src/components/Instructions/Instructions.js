@@ -194,7 +194,8 @@ componentDidMount() {
 
         else if (this.state.currentInstructionText===4){
         mytext = <div className='textbox'> <p></p> <p>Finally, return to the <span className="bold">Profile</span> page by clicking on the arrow at the top left corner of the screen.</p>
-                <p>Click on the icon <span className="bold">Enrol in the study</span> and enter "prolifictest" when prompted for the study handle.</p>
+                <p>Click on the icon <span className="bold">Enrol in the study</span> and enter "XMF7K8" when prompted for the study handle.</p>
+                <p> Once prompted, click on "REFRESH" to finish the enrollement.</p> 
                 <div className="translate"/>
                 <div className="symbolframe">    
                     <img className="introsymbol2"  src={require('../../images/enrol_screen.png')} alt='introsymbol2'/> 

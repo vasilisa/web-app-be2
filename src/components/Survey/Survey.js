@@ -234,7 +234,8 @@ render()
       text = <div className='SurveyIntroText'> <p>Dear Participant,</p>
       <p>Please, now play the <span className="bold">Goblin Heist</span> game in the app.</p>
       <p>You should complete the game <span className="bold">just once to win 1 star</span>.</p>
-      <p>You need to earn <span className="bold">1 star</span> in order to <span className="bold">unlock the next game</span> in the app.</p>
+      <p>You will need <span className="bold">1 star</span> in order to <span className="bold">unlock the next game</span> in the app.</p>
+      <p>Otherwise you won't be able to continue the study.</p>
       <p>But first, go through the tutorial carefully.</p>
       <p>Once done, click CONTINUE.</p></div>
 

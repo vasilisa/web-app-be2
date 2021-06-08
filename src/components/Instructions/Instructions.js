@@ -172,10 +172,10 @@ componentDidMount() {
 
         else if (this.state.currentInstructionText===2) {
         mytext = <div className='textbox'> <p></p> <p>Once consented, you will be asked some onboarding questions in the app. Please, answer the questions in order to continue.</p>
-                <p>"Please feel free to answer 'I prefer not to' if you do not want to share this information.</p> 
+                <p>"Please, feel free to answer 'I prefer not to' if you do not want to share this information.</p> 
                 <div className="translate"/>
                 <p>Once completed, please go to <span className="bold">Profile</span> at the bottom right corner of your screen, then select <span className="bold">Settings.</span></p>
-                <p>Your handle would be on the top right (it is a code with 6 letters and numbers). Please enter your handle in the field below"</p>
+                <p>Your handle would be on the top right (it is a code with 6 letters and numbers). Please, enter your handle in the field below.</p>
                 <div className="symbolframe">    
                     <img className="introsymbol"  src={require('../../images/handle_screen.png')} alt='introsymbol'/> 
                 </div>
@@ -194,7 +194,7 @@ componentDidMount() {
 
         else if (this.state.currentInstructionText===4){
         mytext = <div className='textbox'> <p></p> <p>Finally, return to the <span className="bold">Profile</span> page by clicking on the arrow at the top left corner of the screen.</p>
-                <p>Click on the icon <span className="bold">Enrol in the study</span> and enter "betest" when prompted for the study handle.</p>
+                <p>Click on the icon <span className="bold">Enrol in the study</span> and enter "prolifictest" when prompted for the study handle.</p>
                 <div className="translate"/>
                 <div className="symbolframe">    
                     <img className="introsymbol2"  src={require('../../images/enrol_screen.png')} alt='introsymbol2'/> 

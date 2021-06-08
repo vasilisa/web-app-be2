@@ -219,7 +219,7 @@ class Survey extends React.Component {
     })
 
       alert("You will now be redirected to the submission page. Please, confirm leaving the page. Thank you!")
-      window.location = 'https://app.prolific.co/submissions/complete?cc=XXXXXX' // 
+      window.location = 'https://app.prolific.co/submissions/complete?cc=67D0ACA0' // 
       // window.location = 'https://api-brainexp.osc-fr1.scalingo.io/exp?prolific_id='+this.state.participant_info.prolific_id + '&participant_id=' + this.state.participant_info.participant_id +'&handle=' + this.state.participant_info.handle 
 
   }
@@ -234,6 +234,7 @@ render()
       text = <div className='SurveyIntroText'> <p>Dear Participant,</p>
       <p>Please, now play the <span className="bold">Goblin Heist</span> game in the app.</p>
       <p>You should complete the game <span className="bold">just once to win 1 star</span>.</p>
+      <p>You need to earn <span className="bold">1 star</span> in order to <span className="bold">unlock the next game</span> in the app.</p>
       <p>But first, go through the tutorial carefully.</p>
       <p>Once done, click CONTINUE.</p></div>
 
@@ -336,7 +337,7 @@ render()
     else if (this.props.location.state.participant_info.block_number_survey < this.state.participant_info.TotalBlock)
     {
 
-          text  = 'Thank you! Please, go back to the app and explore the ' + this.state.block_info.survey_names[this.props.location.state.participant_info.block_number_survey+1] + ' planet now. Again, just complete the game ONCE.'
+          text  = 'Thank you! Please, go back to the app and explore the ' + this.state.block_info.survey_names[this.props.location.state.participant_info.block_number_survey+1] + ' planet now. It should be unlocked by now. Again, just complete the game ONCE.'
           icon_ = this.state.block_info.iconnames[this.props.location.state.participant_info.block_number_survey+1]  
         return (
           <div>

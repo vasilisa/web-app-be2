@@ -219,7 +219,7 @@ class Survey extends React.Component {
     })
 
       alert("You will now be redirected to the submission page. Please, confirm leaving the page. Thank you!")
-      window.location = 'https://app.prolific.co/submissions/complete?cc=67D0ACA0' // 
+      window.location = 'https://app.prolific.co/submissions/complete?cc=56B10A30' // 
       // window.location = 'https://api-brainexp.osc-fr1.scalingo.io/exp?prolific_id='+this.state.participant_info.prolific_id + '&participant_id=' + this.state.participant_info.participant_id +'&handle=' + this.state.participant_info.handle 
 
   }

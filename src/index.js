@@ -4,11 +4,11 @@ import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.min.css'; // check if it is needed here 
 import './index.css';
 
-import Intro from "./components/Intro/Intro";
-import Consent from "./components/Consent/Consent";
-import Instructions from "./components/Instructions/Instructions";
-import Survey from "./components/Survey/Survey";
-import QuizBlock from "./components/QuizBlock/QuizBlock";
+import Intro_part2 from "./components/Intro/Intro_part2";
+import Consent_part2 from "./components/Consent/Consent_part2";
+// import Instructions from "./components/Instructions/Instructions";
+// import Survey from "./components/Survey/Survey";
+// import QuizBlock from "./components/QuizBlock/QuizBlock";
 
 import * as serviceWorker from './serviceWorker';
 
@@ -22,7 +22,7 @@ const RefreshRoute = ({ component: Component, isDataAvailable, ...rest }) => (
       ) : (
         <Redirect
           to={{
-            pathname: "/Instructions"
+            pathname: "/Intro_part2"
           }}
         />
       )
@@ -35,11 +35,8 @@ const App = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" component={Intro} exact />
-                <Route path="/Consent" component={Consent} exact />
-                <Route path="/Instructions" component={Instructions} exact />
-                <Route path="/Survey" component={Survey} exact />
-                <Route path="/QuizBlock" component={QuizBlock} exact />
+                <Route path="/" component={Intro_part2} exact />
+                <Route path="/Consent_part2" component={Consent_part2} exact />
             </Switch>
         </BrowserRouter>
     );
